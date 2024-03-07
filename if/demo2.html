@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            // '' 빈 문자열은 false로 간주 -> 실행안됨
+            if ('') {
+                alert('빈 문자열');
+            }
+
+            // undefined -> false , !undefined -> true
+            if (!undefined) {
+                alert('undefined');
+            }
+
+            // 초기화되지않아서 undefined와 같음 -> false
+            var a;
+            if (!a) { // !사용 -> ture
+                alert('값이 할당되지 않은 변수입니다.');
+            }
+
+            // null 은 false로 간주
+            if (!null) { // !사용 -> true
+                alert('null');
+            }
+
+            // null 은 false로 간주
+            if (!NaN) { // !사용 -> true
+                alert('NaN');
+            }
+        </script>
+    </body>
+</html>

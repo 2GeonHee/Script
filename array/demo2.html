@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function get_members(){
+            return ['egoing','k8805','sorialgi'];
+        }
+
+        var members = get_members();
+
+        // .push, .concat 뒤에 배열 추가
+        members.push('popo');
+        members = members.concat('jojo','momo');
+
+        // .unshift 앞에 배열 추가
+        members.unshift('dodo');
+
+        // .splice 끼워넣기 -> 1번 인덱스자리의 0번째에 바꾸기 
+        // (인덱스 1앞에 위치 시키기)
+        // 그리고 삭제된 값을 return
+        members.splice(1, 0, '7777');
+
+        // .splice 끼워넣기 -> 1번 인덱스자리 기준으로 1인덱스 자리에 x, y로 바꾸기
+        // 1번 인덱스인 7777이 없어지고 x,y생성
+        // 그리고 삭제된 값을 return
+        members.splice(1, 1, 'x','y');
+
+        // .length 배열안의 원소 갯수만큼 가변적으로 바뀜
+        for(var i = 0; i < members.length ; i++){
+            document.write(members[i].toUpperCase()+"<br />");
+        }
+
+
+    </script>
+</body>
+</html>

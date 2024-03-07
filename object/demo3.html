@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 객체 안에 lit라는 key가 있고
+        // key의 value는 또다른 객체
+        var grades1 = {
+            'list' : {'egoing': 10, 'k8805': 5, 'solialhi': 80},
+            // 객체 안에 함수가 저장될 수 있다.
+            'show' : function(){
+                alert('hello world');
+                console.log(this.list)
+            }
+        }
+        alert(grades1['list']['egoing']); // 10
+        grades1['show'](); // show의 function 호출
+
+
+        var grades2 = {
+            'list' : {'egoing': 10, 'k8805': 5, 'solialhi': 80},
+            'show' : function(){
+                for(var key in this.list){
+                    document.write(key+" : "+this.list[key]+"<br />");
+                    console.log(key, this.list[key]);
+                }
+            }
+        }
+        grades2.show(); // show의 function 호출
+    </script>
+</body>
+</html>

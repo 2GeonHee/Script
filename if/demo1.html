@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        if(true){
+            alert('result : true'); // 알림
+            prompt('당신의 성별은?'); // 입력값을 받음
+
+            alert(prompt('당신의 나이는?'));
+            // prompt가 먼저 실행되고 받은 값을 alert로 출력
+        }
+        */
+
+       /*
+        var id = prompt('아이디를 입력해주세요.')
+        if(id == 'egoing'){
+            var password = prompt('비밀번호를 입력해주세요.')
+            if(password == '1234'){
+                alert('로그인했습니다. ' + id + '님 반갑습니다.')
+            } else{
+                alert('비밀번호가 다릅니다.')
+            }
+        } else {
+            alert('아이디가 일치하지 않습니다.')
+        }
+        */
+
+        /*
+        var id = prompt('아이디를 입력해주세요.')
+        var password = prompt('비밀번호를 입력해주세요.')
+        if(id == 'egoing' && password == '1234'){
+            if(password == '1234'){
+                alert('로그인했습니다. ' + id + '님 반갑습니다.')
+            }
+        } else {
+            alert('아이디 또는 비밀번호를 확인해주세요.')
+        }
+        */
+
+        var id = prompt('아이디를 입력해주세요.')
+        var password = prompt('비밀번호를 입력해주세요.')
+        if((id == 'egoing' || id == 'gh' ) && password == '1234'){
+            if(password == '1234'){
+                alert('로그인했습니다. ' + id + '님 반갑습니다.')
+            }
+        } else {
+            alert('아이디 또는 비밀번호를 확인해주세요.')
+        }
+
+    </script>
+</body>
+</html>
